@@ -1,0 +1,175 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nano and Bio-IT Convergence Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+  <script src="{% static "js/jquery.min.js" %}"></script>
+  <script src="{% static "js/popper.min.js" %}"></script>
+  <script src="{% static "js/bootstrap.min.js" %}"/></script>
+
+</head>
+
+<body>
+
+<div class="jumbotron">
+    <div class="col-sm-12 text-right">
+        <a href="\admin">Login&nbsp&nbsp&nbsp</a>
+    </div>
+
+    <div class="row  text-center" style="max-width: 1200px; margin: auto;">
+    <div class="col-sm-3" style="min-width: 200px;">
+        <img src="{% static "img/BicLogo.png" %}"/><br>
+    </div>
+    <div class="col-sm-9 text-right">
+    </div>
+
+    </div>
+
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="box-shadow: 8px 8px 32px 8px rgba(0,0,0,0.2);">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav nav-center">
+      <li class="nav-item">
+        <a class="nav-link" href="\index">Homepage</a>
+      </li>
+  <div class="dropdown">
+    <button class="dropbtn" type="button" data-toggle="dropdown">Members &nbsp&nbsp<b class="caret dropdown-toggle"></b></button>
+    <div class="dropdown-menu">
+      <a href="\professor">Director</a>
+      <a href="\phd">Ph.D. Students</a>
+      <a href="\ms">M.S. Students</a>
+      <a href="\bs">B.S. Students</a>
+      <a href="#">Alumni</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" type="button" data-toggle="dropdown">Research &nbsp&nbsp<b class="caret dropdown-toggle"></b></button>
+    <div class="dropdown-menu">
+      <a href="smart_micro">Smart microfluidic devices</a>
+      <a href="wearable_dev">Wearable biomedical devices</a>
+      <a href="iod_dev">IoD devices</a>
+      <a href="nano_assembly">Nano-assembly</a>
+      <a href="nanofabrication">Nanofabrication</a>
+      <a href="nano_bio">Nano-bio</a>
+      <a href="nano_energy">Nano-energy</a>
+    </div>
+  </div>
+      <li class="nav-item">
+        <a class="nav-link" href="\publications">Publications</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="http://iod.co.kr">IoD Site</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="\activities">Activities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="\contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+    <div class="col-sm-12" style="margin-top: 30px; position: auto; text-align: justify;">
+
+        <h1>Contact</h1><hr>
+        <h5>Office and Laboratory:</h5><br>
+        <h6>&nbsp&nbsp&nbsp&nbspNano and Bio-IT Convergence Lab,</h6>
+        <h6>&nbsp&nbsp&nbsp&nbspChambit-Bldg, Room 609,</h6>
+        <h6>&nbsp&nbsp&nbsp&nbspKwangwoon University, Seoul, Republic of Korea.</h6>
+        <h6>&nbsp&nbsp&nbsp&nbspPhone: +82-2-9264-5046</h6>
+        <h6>&nbsp&nbsp&nbsp&nbspE-mail: shim@kw.ac.kr</h6>
+
+        <br><br>
+
+<div id="map" style="width:100%;height:350px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(37.619661,127.05953);
+  var mapOptions = {center: myCenter, zoom: 17};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+    animation: google.maps.Animation.BOUNCE
+  });
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR4PrkZEYVzkxX6aSlA0jZuwYg52gXRHo&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+    <br><br>
+
+    <h1>Free Shuttle Bus</h1><hr>
+    <table><tr>
+        <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td><h6>Mondays to Fridays (except summer and winter holidays)</h6></td>
+        <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td><h6>8:00 am to 10:30 am (service every 5 minutes)</h6></td>
+        <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td><h6>Seokgye Station public parking lot 3rd street - 30m walk from Exit 1 of Seogye Station (Route 6)</h6></td>
+    </tr></table>
+    <br>
+
+        <h1>Bus</h1><hr>
+        <table><tr>
+        <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td><h6>Front door front</h6></td>
+        <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td><h6>261, 1017, 1137, 1140</h6></td>
+        </tr>
+        <tr>
+            <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td><h6>Kwandong Station (6 minutes on foot)</h6></td>
+        <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td><h6>163, 1133, 1220</h6></td>
+        </tr></table>
+
+    <br>
+
+    <h1>Subway</h1><hr>
+    <div><h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLine 1	(Incheon, Suwon - Seoul Station - Cheongyangni - Uijeongbu) 6 minute walk from Gwangwoon Station</h6></div>
+    <div><h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLine 6	(Ngam-Bonghwa Mountain), get off at Seogye Station, walk 10 minutes from Exit 1</h6></div>
+
+    <br>
+    </div>
+    </div>
+  </div>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="jumbotron" style="margin:0px; background-color: #343A40; box-shadow: -8px -8px 32px 8px rgba(0,0,0,0.2);">
+    <div class="row" style="max-width: 1200px; margin: auto;">
+    <div class="col-sm-2 text-center">
+        <div class="KwLogo"><img src="{% static "img/Kwangwoon-University.png" %}"/></div>
+    </div>
+    <div class="col-sm-10">
+                <h6 style="color: gray;">20 Kwangwoon-ro, Nowon-gu, Seoul 01897, Korea | +82-(0)2-940-5114</h6>
+                <h6 style="color: gray;">Copyright © Bio-IT Convergence Lab, Kwangwoon University. All rights reserved.</h6>
+    </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

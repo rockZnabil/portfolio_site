@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nano and Bio-IT Convergence Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+  <script src="{% static "js/jquery.min.js" %}"></script>
+  <script src="{% static "js/popper.min.js" %}"></script>
+  <script src="{% static "js/bootstrap.min.js" %}"/></script>
+
+</head>
+
+<body>
+
+<div class="jumbotron">
+    <div class="col-sm-12 text-right">
+        <a href="\admin">Login&nbsp&nbsp&nbsp</a>
+    </div>
+
+    <div class="row  text-center" style="max-width: 1200px; margin: auto;">
+    <div class="col-sm-3" style="min-width: 200px;">
+        <img src="{% static "img/BicLogo.png" %}"/><br>
+    </div>
+    <div class="col-sm-9 text-right">
+    </div>
+
+    </div>
+
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="box-shadow: 8px 8px 32px 8px rgba(0,0,0,0.2);">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav nav-center">
+      <li class="nav-item">
+        <a class="nav-link" href="\index">Homepage</a>
+      </li>
+  <div class="dropdown">
+    <button class="dropbtn" type="button" data-toggle="dropdown">Members &nbsp&nbsp<b class="caret dropdown-toggle"></b></button>
+    <div class="dropdown-menu">
+      <a href="\professor">Director</a>
+      <a href="\phd">Ph.D. Students</a>
+      <a href="\ms">M.S. Students</a>
+      <a href="\bs">B.S. Students</a>
+      <a href="#">Alumni</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" type="button" data-toggle="dropdown">Research &nbsp&nbsp<b class="caret dropdown-toggle"></b></button>
+    <div class="dropdown-menu">
+        <a href="smart_micro">Smart microfluidic devices</a>
+        <a href="wearable_dev">Wearable biomedical devices</a>
+        <a href="iod_dev">IoD devices</a>
+        <a href="nano_assembly">Nano-assembly</a>
+        <a href="nanofabrication">Nanofabrication</a>
+        <a href="nano_bio">Nano-bio</a>
+        <a href="nano_energy">Nano-energy</a>
+    </div>
+  </div>
+      <li class="nav-item">
+        <a class="nav-link" href="\publications">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://iod.co.kr">IoD Site</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="\activities">Activities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="\contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+    <div class="col-sm-12" style="margin-top: 30px; position: auto; text-align: justify;">
+      <h1>Nano-energy</h1>
+      <hr>
+
+        <img src="{% static "img/research/Dye-Sensitized-Solar-Cell.bmp" %}"/><br><br>
+                <h6>Fig. 1 Energy generation principle of Dye-Sensitized Solar Cell (DSSC).</h6>
+        <br>
+
+        <img src="{% static "img/research/Nanogap-Sensor_Not_Hetero.bmp" %}"/><br><br>
+                <h6>Fig. 2 Large-area nano-gap electrode for enhancing electrochemical reaction.</h6>
+        <br>
+
+        <img src="{% static "img/research/Nanogap-Sensor-Signal.bmp" %}"/><br><br>
+                <h6>Fig. 14 Real-time electrochemical measurement with various concentrations
+        <br>
+                -Joon S. Shim, M. Rust and C. H. Ahn, J. Micromech. Microeng. 2013</h6>
+        <br>
+
+    <br>
+    </div>
+    </div>
+  </div>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="jumbotron" style="margin:0px; background-color: #343A40; box-shadow: -8px -8px 32px 8px rgba(0,0,0,0.2);">
+    <div class="row" style="max-width: 1200px; margin: auto;">
+    <div class="col-sm-2 text-center">
+        <div class="KwLogo"><img src="{% static "img/Kwangwoon-University.png" %}"/></div>
+    </div>
+    <div class="col-sm-10">
+                <h6 style="color: gray;">20 Kwangwoon-ro, Nowon-gu, Seoul 01897, Korea | +82-(0)2-940-5114</h6>
+                <h6 style="color: gray;">Copyright © Bio-IT Convergence Lab, Kwangwoon University. All rights reserved.</h6>
+    </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

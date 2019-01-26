@@ -1,0 +1,198 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nano and Bio-IT Convergence Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+  <script src="{% static "js/jquery.min.js" %}"></script>
+  <script src="{% static "js/popper.min.js" %}"></script>
+  <script src="{% static "js/bootstrap.min.js" %}"/></script>
+
+</head>
+
+<body>
+
+<div class="jumbotron">
+    <div class="col-sm-12 text-right">
+        <a href="\admin">Login&nbsp&nbsp&nbsp</a>
+    </div>
+
+    <div class="row  text-center" style="max-width: 1200px; margin: auto;">
+    <div class="col-sm-3" style="min-width: 200px;">
+        <img src="{% static "img/BicLogo.png" %}"/><br>
+    </div>
+    <div class="col-sm-9 text-right">
+    </div>
+
+    </div>
+
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="box-shadow: 8px 8px 32px 8px rgba(0,0,0,0.2);">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav nav-center">
+      <li class="nav-item">
+        <a class="nav-link" href="\index">Homepage</a>
+      </li>
+  <div class="dropdown">
+    <button class="dropbtn" type="button" data-toggle="dropdown">Members &nbsp&nbsp<b class="caret dropdown-toggle"></b></button>
+    <div class="dropdown-menu">
+      <a href="\professor">Director</a>
+      <a href="\phd">Ph.D. Students</a>
+      <a href="\ms">M.S. Students</a>
+      <a href="\bs">B.S. Students</a>
+      <a href="#">Alumni</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" type="button" data-toggle="dropdown">Research &nbsp&nbsp<b class="caret dropdown-toggle"></b></button>
+    <div class="dropdown-menu">
+        <a href="smart_micro">Smart microfluidic devices</a>
+        <a href="wearable_dev">Wearable biomedical devices</a>
+        <a href="iod_dev">IoD devices</a>
+        <a href="nano_assembly">Nano-assembly</a>
+        <a href="nanofabrication">Nanofabrication</a>
+        <a href="nano_bio">Nano-bio</a>
+        <a href="nano_energy">Nano-energy</a>
+    </div>
+  </div>
+      <li class="nav-item">
+        <a class="nav-link" href="\publications">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://iod.co.kr">IoD Site</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="\activities">Activities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="\contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="FadePic" style="min-width: 75%;">
+        <img src="{% static "img/ProfShim.jpg" %}">
+      </div>
+      <h3>Joon Sub Shim. PhD</h2>
+      <h5>Director, Nano and Bio-IT Convergence Lab.</h5>
+        <h6>Dept. of Electronics Convergence Engineering,</h6>
+            <h6>College of Electronics & Information Engineering,</h6>
+            <h6>Kwangwoon University, Seoul, Republic of Korea.</h6>
+        <h6>Office: Chambit-Bldg, Room 609.</h6>
+        <h6>Phone: +82-2-9264-5046</h6>
+        <h6>E-mail: shim@kw.ac.kr</h6>
+
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8" style="position: auto; text-align: justify;">
+      <h1>About Prof. Shim</h1>
+      <div class="fakeimg"></div><hr>
+      <p>Joon Sub Shim received his B.Sc. degree in both Mechanical engineering and Electrical engineering from KAIST
+      (Korea Advanced Institute of Science and Technology) in 2004.
+      He attained his Ph.D. degree in Electrical Engineering from University of Cincinnati.
+      During his Ph. D. study, he joined the BioMEMS lab and has done graduate research under the research guidance of Prof.
+      Chong H. Ahn. He worked at Samsung Advanced Institute of Technology (SAIT)
+      with a professional research work to develop DNA analyzer by micro/nanotechnology.
+       He is now working at Kwangwoon University as an associate professor and researching
+       about the next-generation nanotechnology for bio and energy applications.</p>
+      <br>
+      <div class="fakeimg"></div><div class="w3-row-padding">
+  <div>
+
+   <h2>Education</h2><hr>
+    <h3>Ph.D. -</h3>
+    <p>&nbsp&nbsp&nbsp<i><b>University of Cincinnati</b></i>, USA.
+      &nbsp&nbsp&nbsp<i><sup>-Mar 2010</sup></i></p>
+  </div>
+
+  <div>
+    <h4>Major:</h4>
+    <p>&nbsp&nbsp&nbspElectrical and Computer Engineering.</p>
+    <h4>Dissertation:</h4>
+    <p>&nbsp&nbsp&nbspSelf-Assembled Carbon Nanotube as an Optical Immunosensor for Point-of-Care Clinical Diagnostics.</p>
+    <h4>Advisor:</h4>
+    <p>&nbsp&nbsp&nbspDr. Chong H. Ahn</p>
+  </div>
+
+  <div>
+
+    <h3>B.Sc. -</h3>
+    <p>&nbsp&nbsp&nbsp<i><b>Korea Advanced Institute of Science and Technology (KAIST)</b></i>, Seoul, South Korea.
+      &nbsp&nbsp&nbsp<i><sup>-Feb 2004</sup></i></p>
+  </div>
+
+  <div>
+    <h4>Major:</h4>
+    <p>&nbsp&nbsp&nbspDouble Major (Mechanical Engineering & Electrical Engineering)</p>
+    <h4>Dissertation:</h4>
+    <p>&nbsp&nbsp&nbspAchieved course works: 191 units (ME: 66 units / EE: 52 units).</p>
+  </div>
+
+  <br>
+  <h2>Working Experiences</h2><hr>
+  <div>
+    <h3>Kwangwoon University, Seoul, Korea.</h3>
+    <p>Associate Professor,<br>
+    Department of Electronics Convergence Engineering.<br>(2013 – Present)</p>
+  </div>
+  <div>
+    <h3>Samsung Advanced Institute of Technology (삼성종합기술원)</h3>
+    <p>Professional Researcher,<br>
+    Bio Research Center, Kiheung-gu, Korea.<br>(2010 – 2013)<br>
+    <br>* Developed a Molecular Diagnostics (MDx) microfluidic device with ultra fast quantitative PCR analysis for multiplexed detection of infectious disease.
+    <br>* Invented a direct bonding technique between PDMS and thermoplastic for low-cost Lab-on-a-chip (LOC) applications.
+    <br>* Developed membrane micro pump and valve for on-chip actuation of nano-liter fluid.</p>
+  </div>
+  <div>
+    <h3>Duksan Mecasys Inc., Daejeon, Korea.</h3>
+    <p>Research Engineer,<br>
+    (Feb. 2000 – Jun. 2000)<br>
+    <br>* Developed a portable spectroscopic analyzer for clinical urine analysis.
+    <br>* Invented a temperature control system 50 times faster than the competing companies.
+    <br>* Implementation of rapid analyzing system for urologic test.</p>
+  </div>
+  <br>
+  <h2>Awards and Leadership</h2><hr>
+  <div>
+    <p>* 세계인명사전 등재 (Who’s Who in the world) <br> <i>(Marqui's Who's Who 2012)</i><br>
+      * Vice-President of Korean Student Association in University of Cincinnati <br> <i>(2009)</i><br>
+      * Student Travel Award: DARPA-MTO <br> <i>(MEMS 2008 conference)</i><br>
+      * Conference Travel Support: University of Cincinnati <br> <i>(IEEE Nano 2009 conference)</i><br>
+      * Graduate Research Assistant: University of Cincinnati <br> <i>(2005 – 2010)</i><br>
+      * University Graduate Scholarship: University of Cincinnati <br> <i>(2005 – 2010)</i><br>
+      * National Scholarship: KAIST <br> <i>(1996 – 2004)</i></p>
+  </div>
+<br>
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron" style="margin:0px; background-color: #343A40; box-shadow: -8px -8px 32px 8px rgba(0,0,0,0.2);">
+    <div class="row" style="max-width: 1200px; margin: auto;">
+    <div class="col-sm-2 text-center">
+        <div class="KwLogo"><img src="{% static "img/Kwangwoon-University.png" %}"/></div>
+    </div>
+    <div class="col-sm-10">
+                <h6 style="color: gray;">20 Kwangwoon-ro, Nowon-gu, Seoul 01897, Korea | +82-(0)2-940-5114</h6>
+                <h6 style="color: gray;">Copyright © Bio-IT Convergence Lab, Kwangwoon University. All rights reserved.</h6>
+    </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

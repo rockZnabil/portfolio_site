@@ -1,0 +1,1 @@
+from django.contrib import admin# Register your models here.from front_end.models import Publication, Book, Conference, Coveradmin.site.register(Cover)admin.site.register(Publication)admin.site.register(Book)admin.site.register(Conference)

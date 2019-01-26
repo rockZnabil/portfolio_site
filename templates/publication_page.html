@@ -1,0 +1,234 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nano and Bio-IT Convergence Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+  <script src="{% static "js/jquery.min.js" %}"></script>
+  <script src="{% static "js/popper.min.js" %}"></script>
+  <script src="{% static "js/bootstrap.min.js" %}"/></script>
+
+</head>
+
+<body>
+
+<div class="jumbotron">
+    <div class="col-sm-12 text-right">
+        <a href="\admin">Login&nbsp&nbsp&nbsp</a>
+    </div>
+
+    <div class="row  text-center" style="max-width: 1200px; margin: auto;">
+    <div class="col-sm-3" style="min-width: 200px;">
+        <img src="{% static "img/BicLogo.png" %}"/><br>
+    </div>
+    <div class="col-sm-9 text-right">
+    </div>
+
+    </div>
+
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="box-shadow: 8px 8px 32px 8px rgba(0,0,0,0.2);">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav nav-center">
+      <li class="nav-item">
+        <a class="nav-link" href="\index">Homepage</a>
+      </li>
+  <div class="dropdown">
+    <button class="dropbtn" type="button" data-toggle="dropdown">Members &nbsp&nbsp<b class="caret dropdown-toggle"></b></button>
+    <div class="dropdown-menu">
+      <a href="\professor">Director</a>
+      <a href="\phd">Ph.D. Students</a>
+      <a href="\ms">M.S. Students</a>
+      <a href="\bs">B.S. Students</a>
+      <a href="#">Alumni</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" type="button" data-toggle="dropdown">Research &nbsp&nbsp<b class="caret dropdown-toggle"></b></button>
+    <div class="dropdown-menu">
+        <a href="smart_micro">Smart microfluidic devices</a>
+        <a href="wearable_dev">Wearable biomedical devices</a>
+        <a href="iod_dev">IoD devices</a>
+        <a href="nano_assembly">Nano-assembly</a>
+        <a href="nanofabrication">Nanofabrication</a>
+        <a href="nano_bio">Nano-bio</a>
+        <a href="nano_energy">Nano-energy</a>
+    </div>
+  </div>
+      <li class="nav-item">
+        <a class="nav-link" href="\publications">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://iod.co.kr">IoD Site</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="\activities">Activities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="\contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-12" style="margin-top: 30px; position: auto; text-align: justify;">
+
+        <h1>Journal Covers</h1><hr>
+            <h6>*Click to view enlarged images.</h6>
+        <div class="FadePic">
+        <table>
+        <tr><td>
+                <a href="{% static "img/A disposable on-chip microvalve and pump for microfluidics.jpg" %}"><img src="{% static "img/Thumb_A-disposable-on-chip_cover.jpg" %}" height="390" width="300" style="padding: 20px;"></a>
+            </td>
+            <td>
+                <a href="{% static "img/AFM_Published_Cover_2018_1226.jpg" %}"><img src="{% static "img/Thumb_AFM_Published_Cover.jpg" %}" height="390" width="300" style="padding: 20px;"></a>
+            </td>
+            </td>
+        </tr>
+        <tr><td>
+                <h6>&nbsp&nbsp&nbsp See Joon S. Shim et al.,<br>&nbsp&nbsp&nbsp Lab Chip. 2018.18.1310.</h6>
+            </td>
+            <td>
+                <h6>&nbsp&nbsp&nbsp See Joon S. Shim et al.,<br>&nbsp&nbsp&nbsp AFM. Vol. 28 • No. 50 • December 12 • 2018</h6>
+            </td>
+            </td>
+        </tr>
+        </table>
+        </div>
+
+        {#<table>#}
+        {#    <td>&nbsp&nbsp&nbsp&nbsp</td>#}
+        {#    <td>#}
+        {#    <ol>#}
+        {#        {% for cover in covers %}#}
+        {#            <li> <a href="{{ cover.cover_url }}"> {{ cover.cover_name }} </a></li>#}
+        {#            <br>#}
+        {#        {% endfor %}#}
+        {#    </ol>#}
+        {#    </td>#}
+        {#</table>#}
+
+        <br><br><br>
+
+          <h1>Journal Papers</h1><hr>
+      <!--
+      <h6>
+          01. Gyeong J. Jin, M. Jalal Uddin and Joon S. Shim, "Biomimetic cilia-patterned rubber electrode using ultra conductive PDMS," Advanced Functional Materials, 2018 (IF=13.325, Q1, JCR Top 1%)
+          <br><br>02. Sung B. Im, M. Jalal Uddin, Gyeong J. Jin and Joon S. Shim, "A disposable on-chip microvalve and pump for programmable microfluidics,"  Lab on a Chip, 2018 (IF=6.045, Q1, Selected as a Journal Cover)
+          <br><br>03. Uddin M. Jalal , Gyeong Jun Jin, and Joon S. Shim, "Paper–Plastic Hybrid Microfluidic Device for Smartphone-Based Colorimetric Analysis of Urine," Analytical Chemistry, Vol. 89, Issue 24, pp. 13160-13166, 2017 (IF=6.32, Q1)
+          <br><br>04. Uddin M. Jalal, Gyeong Jun Jin, Kyu Shik Eom, Min Ho Kim, Joon S. Shim, "On-chip signal amplification of magnetic bead-based immunoassay by aviating magnetic bead chains," Bioelectrochemistry, 2017 (IF=3.346, Q1)
+          <br><br>05. Uddin M. Jalal, Sang C. Kim, and Joon S. Shim, "Histogram analysis for smartphone-based rapid hematocrit determination," Biomedical Optics Express, Vol. 8, Issue 7, pp. 3317-3328, 2017 (IF=3.337, Q1)
+          <br><br>06. Sang C. Kim, Md. Jalal Uddin, Sung B. Im, Sungho Ko and Joon S. Shim, "A smartphone-based optical platform for colorimetric analysis of microfluidic device," Sensors & Actuators: B. Chemical, 239, pp. 52~59, 2017 (IF=4.758, Q1)
+          <br><br>07. Sung B. Im, Sang C. Kim, and Joon S. Shim, "A smart pipette for equipment-free separation and delivery of plasma for on-site whole blood analysis," Analytical and Bioanalytical Chemistry, Volume 408, Issue 5, pp 1391-1397, 2016 (IF=3.436, Q1)
+          <br><br>08. Joon S. Shim, "Theoretic optimisation of microfluidic and magnetic self-assembly of carbon nanotubes," Micro & Nano Letters, Vol. 9, 8, pp. 523 - 528, 2014
+          <br><br>09. Joon S. Shim, M. Rust and C. H. Ahn, “A Large Area Nano-Gap Interdigitated Electrodes on Polymer Substrate as a Disposable Nano-Biosensor,” J. Micromech. Microeng. 2013 (Featured as an IOP Selection, IF=2.502)
+          <br><br>10. Joon S. Shim and Chong H. Ahn, "An on-chip whole blood/plasma separator using hetero-packed beads at the inlet of a microchannel," Lab on a Chip, Volume 12, pp. 863-866 , 2012. (Most read Lab on a chip article in Jan. Feb. Mar. 2010, IF=5.670 )
+          <br><br>11. Joon S. Shim and Chong H. Ahn, "Optical immunosensor using carbon nanotubes coated with a photovoltaic polymer," Biosensors and Bioelectronics, Volume 34, Issue 1, No 15, pp. 208-214, 2012. ( IF=5.602 )
+          <br><br>12. Joon S. Shim, J. Geng, C. H. Ahn, and P. Guo, “Formation of lipid bilayers inside microfluidic channel array for monitoring membrane-embedded nanopores of phi29 DNA packaging nanomotor,” Biomed. Microdev., 2012 ( IF=3.032 )
+          <br><br>13. Joon S. Shim, Y. Yun, W. Cho, V. Shanov, M. J. Schulz and C. H. Ahn, "Self Aligned Multi-Layer Electrodes with Nano-Gap for Fluidic and Magnetic Assembly of Carbon Nanotubes," Langmuir, vol. 26, pp 11642–11647, 2010. (Selected as top 20 articles in BioMedLib, IF=4.186 )
+          <br><br>14. Joon S. Shim, A. W. Browne, S. H. Lee, and C. H. Ahn, "An On-Chip Whole Blood/Plasma Separator With Colloidal Silica Bead-Packed Microchannel On COC Polymer," Biomedical Microdevices, vol. 12, pp. 949-957, 2010. ( IF=3.032)
+          <br><br>15. Joon S. Shim, Y. Yun, M. J Rust, J. Do, V. Shanov, M. J. Schulz, and C. H. Ahn, "Precise self-assembly of individual carbon nanotube using magnetic capturing and fluidic alignment," Nanotechnology, vol. 20, pp. 325067-325074, 2009. ( IF=3.979)
+          <br><br>16. [Review Paper] Y. Yun, E. Eteshola, A. Bhattacharya, Z. Dong, J. S. Shim, L. Conforti, D. Kim, M. J. Schulz, C. H. Ahn, N. Watts, J. Sankar, and S. Sarin, “Tiny Medicine: Nanomaterial-Based Biosensors,” Sensors 2009, 9, 9275-9299. ( IF=2.060)
+          <br><br>17. C. A. Currie, J. S. Shim, S. H. Lee, C. Ahn, P. A. Limbach, H. B. Halsall, W. R. Heineman, "Comparing polyelectrolyte multilayer-coated PMMA microfluidic devices and glass microchips for electrophoretic separations," Electrophoresis, vol. 30 (24), pp. 4245-4250, 2009  (IF=3.303)
+          <br><br>18. Z. Zou, A. Jang, E. McKnight, P. Wu, J. Do, J. S. Shim, P. L. Bishop, and C. H. Ahn, “An On-Site Heavy Metal Analyzer with Polymer Lab-on-a-Chips for Continuous Sampling and Monitoring,” IEEE Sensors Journal, 9, pp. 586-594, 2008 ( IF=1.520)
+        </h6>
+-->
+
+        <table>
+        <td>&nbsp&nbsp&nbsp&nbsp</td>
+        <td>
+        <ol>
+        {% for publication in publications %}
+            <li> <a href="{{ publication.publication_url }}"> {{ publication.publication_name }} </a></li>
+            <br>
+        {% endfor %}
+        </ol>
+        </td>
+        </table>
+
+
+
+        <br><br>
+        <h1>Book Chapters</h1>
+        <hr>
+
+
+        <table>
+        <td>&nbsp&nbsp&nbsp&nbsp</td>
+        <td>
+        <ol>
+        {% for book in books %}
+            <li> <a href="{{ book.book_url }}"> {{ book.book_name }} </a></li>
+            <br>
+        {% endfor %}
+        </ol>
+        </td>
+        </table>
+
+
+<!--
+        <h6>
+          01. Y. Yun, L. Conforti, Z. Dong, V. Shanov, J. S. Shim, W. Heineman, H. B. Halsall, W. Feng, C. H. Ahn, and J. Doh “Chapter 19. Nanoscale Intelligent Materials and Applications,” in “NANOMEDICINE: Design of Particles, Sensors, Motors, Implants, Robots, and Devices” edited by M. J. Schulz, V. N. Shanov, Y. Yun, Published by Artech House, 2009
+        </h6>
+-->
+
+
+        <br><br>
+        <h1>Conference Proceedings</h1>
+        <hr>
+
+
+        <table>
+        <td>&nbsp&nbsp&nbsp&nbsp</td>
+        <td>
+        <ol>
+        {% for conference in conferences %}
+            <li> <a href="{{ conference.conference_url }}"> {{ conference.conference_name }} </a></li>
+            <br>
+        {% endfor %}
+        </ol>
+        </td>
+        </table>
+
+        {#<h6>#}
+            {#01. J. S. Shim, W. J. Jung, C. Park, W. Chung, K. Namkoong, J. Kim and H. Nam, "A low-cost microvalve and pump with polypropylene by UV/Ozone assisted thermal bonding,” uTAS, Okinawa, Japan, 2012#}
+            {#<br><br>02. J. S. Shim, and C.H. Ahn, " Rapid On-Chip Blood/Plasma Separator Using Hetero-Packed Beads At the Inlet of Microchannel," uTAS 2010#}
+            {#<br><br>03. J. S. Shim, Andrew W. Browne, and Chong H. Ahn, “An optical immunosensor using carbon nanotube coated with photovoltaic polymer,” uTAS, Jeju, Korea, 2009#}
+            {#<br><br>04. J. S. Shim, Y. Yun, W. Cho, V. Shanov, M. J. Schulz and C. H. Ahn, "Self Aligned Multi-Layer Electrodes with Nano-Gap for Fluidic and Magnetic Assembly of Carbon Nanotubes," Proceedings of NSTI Nanotech 2009, Arlington, TX, 2009 (Oral Presentation)#}
+            {#<br><br>05. J. S. Shim, A. W. Browne, S. H. Lee, and C. H. Ahn, "An On-Chip Whole Blood/Plasma Separator With Colloidal Silica Bead-Packed Microchannel On COC Polymer," uTAS 2008, San Diego, CA, October 12-16, 2008.#}
+            {#<br><br>06. J. S. Shim, M. J. Rust, and C. H. Ahn, "Interdigitated Array Electrodes with Nano Gaps Using Optical Lithography and Controlled Undercut Method," IEEE NANO 2008, Arlington, TX, August 18-21, 2008. (Oral Presentation)#}
+            {#<br><br>07. J. S. Shim, Y. Yun, M. J. Rust, J. Do, V. Shanov, M. J. Schulz, and C. H. Ahn, "High Precision Fluidic Alignment Of Carbon Nanotubes Using Magnetic Attraction On A Metal Catalyst," MEMS 2008, Tucson, AZ, January 13-17, 2008.#}
+            {#<br><br>08. J. S. Shim, I. Nikcevic, M. J. Rust, A. A. S. Bhagat, W. R. Heineman, C. J. Seliskar, C. H. Ahn and I. Papautsky, "Simple Passive Micromixer Using Recombinant Multiple Flow Streams," Proc. of SPIE Vol. 6465, 64650Y, 2007.#}
+        {#</h6>#}
+        <br><br>
+
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron" style="margin:0px; background-color: #343A40; box-shadow: -8px -8px 32px 8px rgba(0,0,0,0.2);">
+    <div class="row" style="max-width: 1200px; margin: auto;">
+    <div class="col-sm-2 text-center">
+        <div class="KwLogo"><img src="{% static "img/Kwangwoon-University.png" %}"/></div>
+    </div>
+    <div class="col-sm-10">
+                <h6 style="color: gray;">20 Kwangwoon-ro, Nowon-gu, Seoul 01897, Korea | +82-(0)2-940-5114</h6>
+                <h6 style="color: gray;">Copyright © Bio-IT Convergence Lab, Kwangwoon University. All rights reserved.</h6>
+    </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
